@@ -1,0 +1,44 @@
+---
+layout:     post
+title:      🔴进站必看🔴
+author:     宅菌
+tags: 		其它
+subtitle:  	欢迎你，我的朋友
+category:   
+---
+<!-- Start Writing Below in Markdown -->
+
+
+
+
+### 关于本站
+
+这里是**一只技术宅**的最新网站，为你提供了更多更丰富的资源。你可以[点击这里](http://moorstudio.cn/about)，了解**一只技术宅**。
+
+### 使用标签
+
+进入网站首页，你可以看到按时间顺序排放的推送文章列表。请务必留意页面右侧（宽屏电脑端）或底部（手机端）的**Tags标签栏**，通过标签栏，你可以快速根据标签找到你需要的分类文章。
+
+![首页示意](http://moorstudio.cn/img/posts/guide-1.png)
+
+### 使用评论
+
+本站支持用户评论讨论。只需在页面最下方评论区讨论即可。
+
+![评论区](http://moorstudio.cn/img/posts/guide-2.png)
+
+评论时可以通过社交网站登录，或访客模式评论。
+
+您还可以将文章分享给社交网络的朋友们。
+
+### 有问题？
+
+任何问题均可邮件至 [hello@moorstudio.cn](mailto:hello@moorstudio.cn)
+
+
+------------
+
+**扫码关注我们的微信公众号**
+![qrcode_for_gh_667d650e35ff_430.jpg](https://ooo.0o0.ooo/2016/09/21/57e23b7e19dcd.jpg)
+**一只技术宅**
+

@@ -1,0 +1,89 @@
+---
+layout:     post
+title:      hosts
+author:     宅菌
+tags: 		教程
+subtitle:  	科学上网的一种方式
+category:   
+---
+<!-- Start Writing Below in Markdown -->
+
+
+
+
+### 什么是hosts翻墙
+
+大家输入网址来访问网站的时候，并不是直接通过网址就能找到网络上的计算机，而其实是首先将网址提交到dns服务器，由dns服务器来解析出实际的ip，通过ip地址来访问网站。
+
+墙的一部分原理就是屏蔽或者污染掉了解析被墙网址的dns服务器，所以你输入的网址就找不到正确的ip，也就无法访问了。
+
+而在你的电脑中，有一个hosts文件，里面记录了一部分网址与ip地址的对应。当输网址时，首先检查hosts里是否已有对应，有的话，直接根据hosts里的ip就能访问，如果hosts里没有，再去请求dns服务器。hosts翻墙的原理就是，将google等网站的ip直接写在hosts里，访问时，通过hosts拿到实际ip直接访问，不经过dns解析的步骤，就不会被墙了。
+
+### 下载hosts文件
+请点此链接跳转到站外下载
+
+链接：[https://laod.cn/hosts/2016-google-hosts.html](https://laod.cn/hosts/2016-google-hosts.html) 
+
+hosts文件来源于laod.cn
+
+### 如何安装
+
+首先**找到放hosts的地方**：
+
+Windows 系统hosts位于 C:\Windows\System32\drivers\etc\hosts
+
+Android系统hosts位于 /system/etc/hosts
+
+Mac系统hosts跟Linux一样位于 /etc/hosts
+
+iOS系统hosts跟Linux Mac一样位于 /etc/hosts
+
+Linux系统hosts位于 /etc/hosts
+
+然后**用下载的hosts文件覆盖掉原来的hosts文件**即可。因为一般情况下，大家的hosts文件里默认都是一些注释，没有实际内容。
+
+如果你原来就有一些hosts内容，可以通过记事本等文本编辑器打开hosts文件，将新的内容粘贴到原有内容后面即可。
+
+最后**刷新一下DNS解析，让hosts立即生效**。
+
+如果你懒得折腾命令行，可以先断网再联网一般就可以刷新了，或者干脆重启。或者使用下面的命令行：
+
+Windows用户，开始 -> 运行 -> 输入cmd -> 在命令窗口输入：
+
+ `ipconfig /flushdns`
+
+Linux用户，终端输入命令
+
+`sudo rcnscd restart`
+
+或者尝试
+
+`sudo systemctl restart NetworkManager`
+
+Mac用户，终端输入命令
+`sudo killall -HUP mDNSResponder`
+
+Android用户，先开启然后再关闭飞行模式
+
+### 说明
+
+如果http不能访问，请使用https前缀
+
+这种方式只适合部分网站，而且不建议在手机上使用。如果需要其他fq工具，请看：[技术宅的fq教程](http://moorstudio.cn/2016/10/14/fq/) 
+
+**有任何问题可以通过公众号告诉我们或者邮件到admin@moorstudio.cn**
+
+<hr/>
+
+
+**如果这篇教程对你有帮助，来支持一下宅菌吧，蟹蟹(●'◡'●)**
+
+![打赏2.jpg](https://ooo.0o0.ooo/2016/10/14/58008b8134e34.jpg)
+
+
+------------
+
+**扫码关注我们 ↓↓**
+![qrcode_for_gh_667d650e35ff_430.jpg](https://ooo.0o0.ooo/2016/09/21/57e23b7e19dcd.jpg)
+**一只技术宅**
+

@@ -1,0 +1,67 @@
+---
+layout:     post
+title:      java二维码生成工具
+author:     宅菌
+tags: 		工具
+subtitle:  	程序猿福利
+category:   
+---
+<!-- Start Writing Below in Markdown -->
+
+
+
+#### 说明：
+
+项目github源地址：
+[github:dieforfree/qart4j](https://github.com/dieforfree/qart4j)
+
+#### 使用方法：
+
+从这里下载编译好的jar文件：
+
+链接：https://eyun.baidu.com/s/3nuIegcT 密码：jishuzhai
+链接失效请联系补发: [邮件联系](mailto:admin@moorstudio.cn)
+
+如直接在命令行运行jar，需安装jre。
+
+
+获取关于参数的帮助：
+
+    java -jar qart4j.jar --help
+
+参数的含义：
+
+    -i 输入图片路径 
+	-o 输出图片路径 
+	-w 输出图片宽度 
+	-h 输出图片高度 
+	-u 二维码中的 URL 
+	-v 二维码 version ，可参看二维码规范文档 
+	-z 生成的二维码图片大小 
+	--ml, --mr, --mt, --mb 四个参数用来确定二维码在整个图片中的位置信息， ml 是 margin-left 的意思，其他类似 
+	--cb, --cw 分别用来制定二维码中黑色块和白色块的 ARGB 值
+
+下载的文件夹中有一个示例图片及其结果，要制作示例效果，可使用如下参数：
+
+    java -jar qart4j.jar \
+	-i sample-input.png \
+	-o sample-output.png \
+	-u http://www.imdb.com/title/tt2267968/ \
+	-w 324 -h 480  \
+	--mr 72 --mb 164 \
+	-z 168 -v 16 -q 1\
+	--cw EFFFFFFF
+
+
+项目源码请到github下载哦。
+
+
+
+
+
+------------
+
+**扫码关注我们 ↓↓**
+![qrcode_for_gh_667d650e35ff_430.jpg](https://ooo.0o0.ooo/2016/09/21/57e23b7e19dcd.jpg)
+**一只技术宅**
+
